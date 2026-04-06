@@ -484,6 +484,15 @@ section.visible { background-size: 100% 1px; }
   flex-shrink: 0;
 }
 
+/* ---- SHELF CATEGORY LABEL ---- */
+.shelf-category {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  letter-spacing: 0.04em;
+  margin: 32px 0 12px;
+}
+
 /* ---- BOOKSHELF ---- */
 .shelf-wrapper {
   position: relative;
