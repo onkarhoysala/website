@@ -505,10 +505,14 @@ section.visible { background-size: 100% 1px; }
   gap: 28px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+  scroll-padding-left: 24px;
   -webkit-overflow-scrolling: touch;
-  padding: 0 24px 8px;
+  padding: 0 0 8px;
   scrollbar-width: none;
 }
+
+.shelf-scroll > .book-card:first-child { margin-left: 24px; }
+.shelf-scroll > .book-card:last-child  { margin-right: 24px; }
 
 .shelf-scroll::-webkit-scrollbar { display: none; }
 
