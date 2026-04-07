@@ -152,6 +152,18 @@ Avid reader - even if I may say so myself. Pride of our home is the library.</p>
   </div>
 
   <script>
+    document.querySelectorAll('.shelf-scroll').forEach(scroll => {
+      const wrapper = scroll.closest('.shelf-wrapper');
+      const update = () => {
+        wrapper.classList.toggle('can-scroll-left', scroll.scrollLeft > 1);
+        wrapper.classList.toggle('at-end', scroll.scrollLeft + scroll.clientWidth >= scroll.scrollWidth - 1);
+      };
+      scroll.addEventListener('scroll', update, { passive: true });
+      update();
+    });
+  </script>
+
+  <script>
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) entry.target.classList.add('visible');
