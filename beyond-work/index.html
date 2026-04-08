@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 </head>
 <body>
 
@@ -48,6 +49,27 @@ Avid reader - even if I may say so myself. Pride of our home is the library.</p>
           <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="7" cy="12" r="5"/><circle cx="17" cy="12" r="5"/></svg>
           Flickr
         </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAVEL -->
+  <section id="travel" class="reveal">
+    <div class="container">
+      <p class="section-label">Travel</p>
+      <div class="travel-carousel">
+
+        <div class="travel-card travel-card--passport">
+          <div class="passport-placeholder">
+            <p class="passport-label">Flighty Passport</p>
+            <p class="passport-year">2025</p>
+          </div>
+        </div>
+
+        <div class="travel-card travel-card--map">
+          <div id="world-map"></div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -135,6 +157,7 @@ Avid reader - even if I may say so myself. Pride of our home is the library.</p>
     </footer>
   </div>
 
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="beyond.js" defer></script>
 
 </body>

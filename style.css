@@ -427,6 +427,66 @@ section.visible { background-size: 100% 1px; }
   flex-shrink: 0;
 }
 
+/* ---- TRAVEL ---- */
+.travel-carousel {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.travel-card {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.travel-card--passport {
+  background: #1a1a1a;
+  aspect-ratio: 3/4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.passport-placeholder {
+  text-align: center;
+}
+
+.passport-label {
+  font-family: var(--serif);
+  font-size: 18px;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.06em;
+  margin: 0 0 6px;
+}
+
+.passport-year {
+  font-family: var(--serif);
+  font-size: 42px;
+  font-style: italic;
+  color: rgba(255,255,255,0.15);
+  margin: 0;
+  line-height: 1;
+}
+
+.travel-card--map {
+  aspect-ratio: 16/9;
+}
+
+#world-map {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  .travel-carousel {
+    grid-template-columns: 1fr;
+  }
+  .travel-card--map {
+    aspect-ratio: 4/3;
+  }
+}
+
 /* ---- PHOTO GRID ---- */
 .photo-grid {
   display: grid;

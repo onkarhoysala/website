@@ -14,6 +14,24 @@
   });
 })();
 
+// World map — Alidade Smooth
+const map = L.map('world-map', {
+  center: [20, 10],
+  zoom: 1,
+  zoomControl: false,
+  attributionControl: false,
+  scrollWheelZoom: false,
+  dragging: false,
+  doubleClickZoom: false,
+  touchZoom: false
+});
+
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+  subdomains: 'abcd',
+  maxZoom: 20,
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>'
+}).addTo(map);
+
 // Shelf scroll — show/hide edge gradients
 document.querySelectorAll('.shelf-scroll').forEach(scroll => {
   const wrapper = scroll.closest('.shelf-wrapper');
