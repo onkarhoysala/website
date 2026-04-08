@@ -26,14 +26,14 @@ if (travelCarousel) {
 
 // World map
 const map = L.map('world-map', {
-  center: [25, 15],
+  center: [20, 15],
   zoom: 1,
-  zoomControl: false,
+  zoomControl: true,
   attributionControl: false,
-  scrollWheelZoom: false,
-  dragging: false,
-  doubleClickZoom: false,
-  touchZoom: false
+  scrollWheelZoom: true,
+  dragging: true,
+  doubleClickZoom: true,
+  touchZoom: true
 });
 
 L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
@@ -65,13 +65,23 @@ const places = [
 
 const byName = Object.fromEntries(places.map(p => [p.name, p.ll]));
 const home = byName['Bangalore'];
+const sf   = byName['San Francisco'];
 
-// Lines from Bangalore to every destination
-const destinations = places.filter(p => p.name !== 'Bangalore');
-destinations.forEach(p => {
-  new L.Geodesic([[home, p.ll]], {
+const usStops = ['Las Vegas', 'Los Angeles', 'Grand Canyon', 'Antelope Canyon'];
+
+const routes = [
+  // BLR → everywhere except US stops
+  ...places
+    .filter(p => p.name !== 'Bangalore' && !usStops.includes(p.name))
+    .map(p => [home, p.ll]),
+  // SF → US stops
+  ...usStops.map(name => [sf, byName[name]]),
+];
+
+routes.forEach(([a, b]) => {
+  new L.Geodesic([[a, b]], {
     weight: 1.2,
-    opacity: 0.35,
+    opacity: 0.4,
     color: ACCENT,
     steps: 8,
   }).addTo(map);
