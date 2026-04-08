@@ -429,20 +429,28 @@ section.visible { background-size: 100% 1px; }
 
 /* ---- TRAVEL ---- */
 .travel-carousel {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding-left: 0;
+  scrollbar-width: none;
   gap: 16px;
   margin-top: 24px;
+  padding-bottom: 8px;
 }
 
+.travel-carousel::-webkit-scrollbar { display: none; }
+
 .travel-card {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
   border-radius: 10px;
   overflow: hidden;
 }
 
 .travel-card--passport {
   background: #1a1a1a;
-  aspect-ratio: 3/4;
+  aspect-ratio: 3/2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -454,23 +462,23 @@ section.visible { background-size: 100% 1px; }
 
 .passport-label {
   font-family: var(--serif);
-  font-size: 18px;
+  font-size: 22px;
   color: rgba(255,255,255,0.5);
   letter-spacing: 0.06em;
-  margin: 0 0 6px;
+  margin: 0 0 8px;
 }
 
 .passport-year {
   font-family: var(--serif);
-  font-size: 42px;
+  font-size: 72px;
   font-style: italic;
-  color: rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.12);
   margin: 0;
   line-height: 1;
 }
 
 .travel-card--map {
-  aspect-ratio: 16/9;
+  aspect-ratio: 3/2;
 }
 
 #world-map {
@@ -478,13 +486,23 @@ section.visible { background-size: 100% 1px; }
   height: 100%;
 }
 
-@media (max-width: 600px) {
-  .travel-carousel {
-    grid-template-columns: 1fr;
-  }
-  .travel-card--map {
-    aspect-ratio: 4/3;
-  }
+.travel-dots {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.travel-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--border);
+  transition: background 0.2s;
+}
+
+.travel-dot.active {
+  background: var(--text-secondary);
 }
 
 /* ---- PHOTO GRID ---- */

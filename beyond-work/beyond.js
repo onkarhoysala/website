@@ -14,6 +14,16 @@
   });
 })();
 
+// Travel carousel dots
+const travelCarousel = document.getElementById('travel-carousel');
+const dots = document.querySelectorAll('.travel-dot');
+if (travelCarousel) {
+  travelCarousel.addEventListener('scroll', () => {
+    const index = Math.round(travelCarousel.scrollLeft / travelCarousel.offsetWidth);
+    dots.forEach((d, i) => d.classList.toggle('active', i === index));
+  }, { passive: true });
+}
+
 // World map — Alidade Smooth
 const map = L.map('world-map', {
   center: [20, 10],
