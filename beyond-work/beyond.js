@@ -36,7 +36,7 @@ const map = L.map('world-map', {
   touchZoom: true
 });
 
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
   subdomains: 'abcd',
   maxZoom: 20,
 }).addTo(map);
