@@ -784,7 +784,7 @@ footer p {
   .page-header h1 { font-size: 36px; }
 
   .photo-grid { grid-template-columns: repeat(2, 1fr); }
-  .photo-slot:nth-child(1) { grid-column: span 2; grid-row: span 1; aspect-ratio: 16/9; }
+  .photo-slot:nth-child(1) { grid-column: span 1; grid-row: span 1; aspect-ratio: 1; }
 
   .book-card { width: 130px; }
   .book-cover { width: 130px; height: 192px; }
