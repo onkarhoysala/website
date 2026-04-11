@@ -164,7 +164,9 @@ section.visible .section-label::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.25) 55%, rgba(0,0,0,0.05) 100%);
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,0.80) 0%, transparent 35%),
+    linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.25) 55%, transparent 100%);
   z-index: 0;
 }
 
@@ -549,6 +551,40 @@ section.visible { background-size: 100% 1px; }
   background: var(--text-secondary);
 }
 
+/* ---- TENNIS ---- */
+.tennis-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 40px;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.tennis-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.tennis-photo {
+  aspect-ratio: 1;
+  background: var(--border);
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.tennis-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tennis-text {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
 /* ---- PHOTO GRID ---- */
 .photo-grid {
   display: grid;
@@ -829,6 +865,8 @@ footer p {
 
   .page-header { padding: 56px 0 44px; }
   .page-header h1 { font-size: 36px; }
+
+  .tennis-layout { grid-template-columns: 1fr; }
 
   .photo-grid { grid-template-columns: repeat(2, 1fr); }
   .photo-slot:nth-child(1) { grid-column: span 1; grid-row: span 1; aspect-ratio: 1; }
