@@ -276,9 +276,7 @@ section.visible { background-size: 100% 1px; }
 }
 
 .now-item {
-  display: grid;
-  grid-template-columns: 120px 1fr;
-  gap: 24px;
+  display: block;
   padding: 22px 0;
   border-bottom: 1px solid var(--border);
   text-decoration: none;
@@ -775,7 +773,6 @@ footer p {
   .hero h1 { font-size: 44px; margin-bottom: 20px; }
   .hero .tagline { font-size: 17px; }
 
-  .now-item { grid-template-columns: 1fr; gap: 4px; }
   .now-item .now-role { font-size: 12px; }
 
   .timeline-item { grid-template-columns: 1fr; gap: 4px; }
