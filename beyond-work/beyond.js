@@ -98,6 +98,81 @@ document.querySelectorAll('.shelf-scroll').forEach(scroll => {
   update();
 });
 
+// Book panel
+(function () {
+  const cards = Array.from(document.querySelectorAll('.book-card'));
+  const panel = document.getElementById('book-panel');
+  const backdrop = document.getElementById('book-panel-backdrop');
+  const coverEl = panel.querySelector('.book-panel-cover');
+  const titleEl = panel.querySelector('.book-panel-title');
+  const authorEl = panel.querySelector('.book-panel-author');
+  const isbnEl = panel.querySelector('.book-panel-isbn');
+  const noteEl = panel.querySelector('.book-panel-note');
+  const prevBtn = document.getElementById('book-prev');
+  const nextBtn = document.getElementById('book-next');
+  let current = 0;
+
+  function load(i) {
+    panel.classList.add('navigating');
+    setTimeout(() => {
+      current = i;
+      const card = cards[i];
+      const img = card.querySelector('.book-cover img');
+      const title = card.querySelector('.book-info h3').textContent;
+      const author = card.querySelector('.book-author').textContent;
+      const m = img.src.match(/\/isbn\/([^-]+)-L\.jpg/);
+      coverEl.src = img.src;
+      coverEl.alt = title;
+      titleEl.textContent = title;
+      authorEl.textContent = author;
+      isbnEl.textContent = m ? 'ISBN ' + m[1] : '';
+      const noteDiv = card.querySelector('.book-note');
+      noteEl.innerHTML = noteDiv ? noteDiv.innerHTML : '';
+      noteEl.style.display = noteDiv ? '' : 'none';
+      prevBtn.disabled = i === 0;
+      nextBtn.disabled = i === cards.length - 1;
+      panel.classList.remove('navigating');
+    }, 180);
+  }
+
+  function open(i) {
+    load(i);
+    panel.classList.add('open');
+    backdrop.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function close() {
+    panel.classList.remove('open');
+    backdrop.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  cards.forEach((card, i) => card.addEventListener('click', () => open(i)));
+  prevBtn.addEventListener('click', () => { if (current > 0) load(current - 1); });
+  nextBtn.addEventListener('click', () => { if (current < cards.length - 1) load(current + 1); });
+  backdrop.addEventListener('click', close);
+  panel.querySelector('.book-panel-close').addEventListener('click', close);
+
+  // Desktop: arrow keys
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') { close(); return; }
+    if (!panel.classList.contains('open')) return;
+    if (e.key === 'ArrowLeft'  && current > 0)                load(current - 1);
+    if (e.key === 'ArrowRight' && current < cards.length - 1) load(current + 1);
+  });
+
+  // Mobile: swipe left/right on panel
+  let touchStartX = 0;
+  panel.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+  panel.addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(dx) < 40) return;
+    if (dx < 0 && current < cards.length - 1) load(current + 1); // swipe left → next
+    if (dx > 0 && current > 0)                load(current - 1); // swipe right → prev
+  }, { passive: true });
+})();
+
 // Scroll reveal
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
