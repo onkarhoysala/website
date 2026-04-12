@@ -755,29 +755,22 @@ section.visible { background-size: 100% 1px; }
 
 @media (max-width: 600px) {
   .book-panel {
-    top: 15vh;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: auto;
-    transform: translateY(100%);
-    border-radius: 16px 16px 0 0;
-    padding: 12px 24px 32px;
-    padding-bottom: max(32px, env(safe-area-inset-bottom));
-    box-shadow: 0 -4px 32px rgba(0,0,0,0.12);
+    top: 8vh;
+    left: 5%;
+    right: 5%;
+    bottom: auto;
+    width: auto;
+    max-height: 84vh;
+    transform: scale(0.94) translateX(0);
+    opacity: 0;
+    transition: transform 0.25s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.25s ease;
+    border-radius: 16px;
+    padding: 28px 24px 28px;
+    box-shadow: 0 8px 48px rgba(0,0,0,0.18);
     overflow-y: auto;
   }
-  .book-panel.open { transform: translateY(0); }
-  .book-panel-drag {
-    display: block;
-    width: 36px;
-    height: 4px;
-    background: var(--border);
-    border-radius: 2px;
-    margin: 0 auto 20px;
-    flex-shrink: 0;
-  }
+  .book-panel.open { transform: scale(1) translateX(0); opacity: 1; }
+  .book-panel-drag { display: none; }
   .book-panel-cover { width: 42% !important; max-width: 180px; margin-bottom: 16px; }
   .book-panel-title { font-size: 16px; margin-bottom: 4px; }
   .book-panel-note { font-size: 13px; margin-top: 10px; }

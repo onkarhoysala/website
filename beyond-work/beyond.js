@@ -131,6 +131,7 @@ document.querySelectorAll('.shelf-scroll').forEach(scroll => {
       noteEl.style.display = noteDiv ? '' : 'none';
       prevBtn.disabled = i === 0;
       nextBtn.disabled = i === cards.length - 1;
+      panel.scrollTop = 0;
       panel.classList.remove('navigating');
     }, 180);
   }
