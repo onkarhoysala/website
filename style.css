@@ -778,7 +778,9 @@ section.visible { background-size: 100% 1px; }
     margin: 0 auto 20px;
     flex-shrink: 0;
   }
-  .book-panel-cover { width: 75% !important; max-width: 320px; }
+  .book-panel-cover { width: 42% !important; max-width: 180px; margin-bottom: 16px; }
+  .book-panel-title { font-size: 16px; margin-bottom: 4px; }
+  .book-panel-note { font-size: 13px; margin-top: 10px; }
 }
 
 /* ---- SHELF CATEGORY LABEL ---- */
