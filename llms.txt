@@ -1,0 +1,20 @@
+# Onkar Hoysala
+
+> Head of Engineering at Flash.co, building AI-powered commerce. Sixteen years across consumer tech and SaaS — previously Livspace, VideoKen, and co-founder of Fields of View. Based in Bangalore, India.
+
+Onkar runs engineering end to end at Flash.co, reporting to the CEO, and stays hands-on across infra, agents, and UI. He scaled the product to ~1M monthly active users, shipped two product pivots (the second in six weeks), and built the agent platform that keeps Flash.co's product rankings current — around 7,900 live ranked lists covering 217,000 products across India and the US. He's led engineering teams of up to 21 people while holding the budget flat for four years, favoring talent density over headcount.
+
+Before Flash.co: Director of Engineering at Livspace (owned the pre-fulfilment domain, ~50 engineers), Lead Engineer at VideoKen, and co-founder of Fields of View, a research company building simulation software for public policy that is still running today. He holds an MS by Research in Information Technology from IIIT-Bangalore and a B.E. in Computer Science from Visvesvaraya Technological University.
+
+Outside work: photography (street and travel, shoots a Canon EOS 500N and 500D), tennis, travel, and reading — the home library has been built up over two and a half decades.
+
+## Pages
+
+- [Home](https://onkarhoysala.com/): Current role, career history, and education. The "Now" section can be read from a Leader or Builder perspective via a toggle — same facts, different emphasis (org/strategy vs. hands-on architecture).
+- [Beyond Work](https://onkarhoysala.com/beyond-work/): Photography, tennis, and books.
+
+## Contact
+
+- Email: mail@onkarhoysala.com
+- LinkedIn: https://www.linkedin.com/in/onkarhoysala/
+- CV: https://flowcv.com/resume/bjng1bo9ws
