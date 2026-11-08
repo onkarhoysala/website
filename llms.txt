@@ -10,7 +10,8 @@ Outside work: photography (street and travel, shoots a Canon EOS 500N and 500D),
 
 ## Pages
 
-- [Home](https://onkarhoysala.com/): Current role, career history, and education. The "Now" section can be read from a Leader or Builder perspective via a toggle — same facts, different emphasis (org/strategy vs. hands-on architecture).
+- [Home](https://onkarhoysala.com/): Who he is, in brief, with links out to Work and Beyond Work.
+- [Work](https://onkarhoysala.com/work/): Current role, career history, and education. The "Now" section can be read from a Leader or Builder perspective via a toggle — same facts, different emphasis (org/strategy vs. hands-on architecture).
 - [Beyond Work](https://onkarhoysala.com/beyond-work/): Photography, tennis, and books.
 
 ## Contact

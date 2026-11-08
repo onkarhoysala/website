@@ -513,6 +513,52 @@ body[data-perspective="builder"] .timeline-item[data-persona="builder"] { displa
 
 .beyond-link:hover { transform: translateX(4px); }
 
+/* ---- HUB LINKS (home page) ---- */
+.hub-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.hub-link {
+  display: block;
+  border: 1.5px solid var(--text);
+  padding: 26px 28px;
+  text-decoration: none;
+  color: var(--text);
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.hub-link:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.hub-link h2 {
+  font-family: var(--display);
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  margin-bottom: 10px;
+}
+
+.hub-link p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin-bottom: 16px;
+}
+
+.hub-link-arrow {
+  font-family: var(--sans);
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
 /* ---- CONNECT ---- */
 .connect-row {
   display: flex;
@@ -1075,11 +1121,14 @@ footer p {
 
 /* ---- RESPONSIVE ---- */
 @media (max-width: 600px) {
-  nav .nav-links { gap: 20px; }
+  nav .nav-links { gap: 14px; }
+  nav .nav-links a { font-size: 11px; }
 
   .masthead { padding: 28px 20px 20px; }
   .masthead h1 { font-size: 36px; }
   .masthead .byline { font-size: 11px; }
+
+  .hub-links { grid-template-columns: 1fr; }
 
   .now-item .now-role { font-size: 12px; }
 
