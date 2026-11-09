@@ -316,7 +316,9 @@ body[data-perspective="builder"] .timeline-item[data-persona="builder"] { displa
 .now-item-wrap:last-child { border-bottom: none; }
 
 .now-item {
-  display: block;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
   text-decoration: none;
   color: var(--text);
 }
@@ -370,6 +372,20 @@ body[data-perspective="builder"] .timeline-item[data-persona="builder"] { displa
   gap: 24px;
   padding: calc(var(--rhythm) / 2) 0;
   border-bottom: 1px solid var(--border);
+}
+
+#before .timeline-item {
+  grid-template-columns: 56px 96px 1fr;
+  gap: 16px 20px;
+  align-items: start;
+}
+
+.entry-logo {
+  width: 56px;
+  height: 32px;
+  object-fit: contain;
+  object-position: left center;
+  margin-top: 4px;
 }
 
 .timeline-item:last-child { border-bottom: none; }
