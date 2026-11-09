@@ -323,6 +323,10 @@ body[data-perspective="builder"] .timeline-item[data-persona="builder"] { displa
   color: var(--text);
 }
 
+.now-item .entry-logo {
+  margin-top: 4px;
+}
+
 .now-item:hover h3 { text-decoration: underline; text-underline-offset: 4px; transition: text-decoration-color 0.2s; }
 
 .now-item .now-role {
@@ -375,7 +379,7 @@ body[data-perspective="builder"] .timeline-item[data-persona="builder"] { displa
 }
 
 #before .timeline-item {
-  grid-template-columns: 96px 1fr;
+  grid-template-columns: 112px 1fr;
   gap: 24px;
   align-items: start;
 }
@@ -383,12 +387,12 @@ body[data-perspective="builder"] .timeline-item[data-persona="builder"] { displa
 .entry-meta {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
 }
 
 .entry-logo {
-  width: 56px;
-  height: 32px;
+  width: 88px;
+  height: 48px;
   object-fit: contain;
   object-position: left center;
 }
