@@ -3,12 +3,12 @@
    ============================================================ */
 
 :root {
-  --bg: #F4F3EE;
-  --text: #17140F;
-  --text-secondary: #46402F;
-  --accent: #B23A2E;
-  --accent-light: #F7E3DF;
-  --border: #DEDCD2;
+  --bg: #F1F4EC;
+  --text: #141A12;
+  --text-secondary: #202821;
+  --accent: #4C7A52;
+  --accent-light: #E1EBD9;
+  --border: #DEE6D6;
   --card-bg: #FFFFFF;
   --display: 'Anton', 'Arial Narrow', sans-serif;
   --serif: 'PT Serif', Georgia, serif;
@@ -130,7 +130,7 @@ section.visible .section-label::after {
 
 /* ---- MASTHEAD (index only) ---- */
 .masthead {
-  padding: 32px 24px 20px;
+  padding: 12px 24px;
   text-align: center;
 }
 
@@ -139,14 +139,14 @@ section.visible .section-label::after {
   margin: 0 auto;
   border-top: 3px solid var(--text);
   border-bottom: 1px solid var(--text);
-  padding: 20px 0 14px;
+  padding: 0;
 }
 
 .masthead h1 {
   font-family: var(--display);
   font-size: clamp(40px, 8vw, 68px);
   font-weight: 400;
-  line-height: 1;
+  line-height: calc(var(--rhythm) * 2);
   letter-spacing: 0.01em;
   color: var(--text);
   text-transform: uppercase;
@@ -165,9 +165,10 @@ section.visible .section-label::after {
   font-family: var(--serif);
   font-style: italic;
   font-size: 16px;
+  line-height: var(--rhythm);
   letter-spacing: 0;
   color: var(--text-secondary);
-  margin-top: 10px;
+  margin-top: 0;
 }
 
 /* ---- PAGE HEADER (beyond-work only) ---- */
@@ -532,7 +533,7 @@ body[data-perspective="builder"] .timeline-item[data-persona="builder"] { displa
 .hub-link {
   display: block;
   border: 1.5px solid var(--text);
-  padding: 26px 28px;
+  padding: 26.5px 28px;
   text-decoration: none;
   color: var(--text);
   transition: background 0.2s, border-color 0.2s, transform 0.2s;
@@ -546,26 +547,29 @@ body[data-perspective="builder"] .timeline-item[data-persona="builder"] { displa
 .hub-link h2 {
   font-family: var(--display);
   font-size: 24px;
+  line-height: var(--rhythm);
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.01em;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 
 .hub-link p {
   font-size: 16px;
   color: var(--text-secondary);
-  line-height: 1.55;
-  margin-bottom: 16px;
+  line-height: var(--rhythm);
+  margin-bottom: var(--rhythm);
 }
 
 .hub-link-arrow {
   font-family: var(--sans);
   font-size: 12.5px;
+  line-height: var(--rhythm);
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent);
+  display: block;
 }
 
 /* ---- CONNECT ---- */

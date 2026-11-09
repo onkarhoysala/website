@@ -1,9 +1,9 @@
 // TEMPORARY — for review only. Remove before going live.
 (function () {
   const PALETTES = {
-    current: { label: 'Current', bg: '#F4F3EE', text: '#17140F', textSecondary: '#46402F', accent: '#B23A2E', accentLight: '#F7E3DF', border: '#DEDCD2', cardBg: '#FFFFFF' },
+    current: { label: 'Red (old)', bg: '#F4F3EE', text: '#17140F', textSecondary: '#46402F', accent: '#B23A2E', accentLight: '#F7E3DF', border: '#DEDCD2', cardBg: '#FFFFFF' },
     coral: { label: 'Warm Coral', bg: '#FAF3E9', text: '#2B2420', textSecondary: '#7A6F62', accent: '#D9704F', accentLight: '#FBE2D8', border: '#EDE1D2', cardBg: '#FFFFFF' },
-    sage: { label: 'Sage Green', bg: '#F1F4EC', text: '#232B22', textSecondary: '#5F6B58', accent: '#4C7A52', accentLight: '#E1EBD9', border: '#DEE6D6', cardBg: '#FFFFFF' },
+    sage: { label: 'Sage Green (current)', bg: '#F1F4EC', text: '#141A12', textSecondary: '#202821', accent: '#4C7A52', accentLight: '#E1EBD9', border: '#DEE6D6', cardBg: '#FFFFFF' },
     teal: { label: 'Dusty Teal', bg: '#EEF4F6', text: '#1C2A2E', textSecondary: '#5A6C70', accent: '#2E7D8C', accentLight: '#DCEEF1', border: '#D9E6E9', cardBg: '#FFFFFF' },
     marigold: { label: 'Marigold', bg: '#FFF6E9', text: '#2A2118', textSecondary: '#8A7A63', accent: '#E8873A', accentLight: '#FBE9D3', border: '#F0E3C8', cardBg: '#FFFFFF' }
   };
@@ -39,7 +39,7 @@
   }
 
   document.addEventListener('DOMContentLoaded', function () {
-    const savedPalette = localStorage.getItem('palette-preview') || 'current';
+    const savedPalette = localStorage.getItem('palette-preview') || 'sage';
     const savedTexture = localStorage.getItem('texture-preview') || 'dots';
     applyPalette(savedPalette);
     applyTexture(savedTexture);
