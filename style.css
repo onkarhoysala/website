@@ -146,7 +146,7 @@ section.visible .section-label::after {
   font-family: var(--display);
   font-size: clamp(40px, 8vw, 68px);
   font-weight: 400;
-  line-height: calc(var(--rhythm) * 2);
+  line-height: calc(var(--rhythm) * 3);
   letter-spacing: 0.01em;
   color: var(--text);
   text-transform: uppercase;
