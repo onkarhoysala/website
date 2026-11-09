@@ -391,8 +391,9 @@ body[data-perspective="builder"] .timeline-item[data-persona="builder"] { displa
 }
 
 .entry-logo {
-  width: 88px;
-  height: 48px;
+  height: 36px;
+  width: auto;
+  max-width: 100%;
   object-fit: contain;
   object-position: left center;
 }
