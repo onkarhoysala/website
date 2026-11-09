@@ -115,7 +115,7 @@ nav .nav-links a.active { color: var(--accent); }
   content: '';
   position: absolute;
   left: 0;
-  bottom: -4px;
+  bottom: 4px;
   width: 0;
   height: 1.5px;
   background: var(--accent);
