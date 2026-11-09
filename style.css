@@ -375,9 +375,15 @@ body[data-perspective="builder"] .timeline-item[data-persona="builder"] { displa
 }
 
 #before .timeline-item {
-  grid-template-columns: 56px 96px 1fr;
-  gap: 16px 20px;
+  grid-template-columns: 96px 1fr;
+  gap: 24px;
   align-items: start;
+}
+
+.entry-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .entry-logo {
@@ -385,7 +391,6 @@ body[data-perspective="builder"] .timeline-item[data-persona="builder"] { displa
   height: 32px;
   object-fit: contain;
   object-position: left center;
-  margin-top: 4px;
 }
 
 .timeline-item:last-child { border-bottom: none; }
