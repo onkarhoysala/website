@@ -135,7 +135,7 @@ section.visible .section-label::after {
 }
 
 .masthead-inner {
-  max-width: 1080px;
+  max-width: 1032px;
   margin: 0 auto;
   border-bottom: 1px solid var(--text);
   padding: 0;
