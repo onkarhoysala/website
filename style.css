@@ -130,14 +130,13 @@ section.visible .section-label::after {
 
 /* ---- MASTHEAD (index only) ---- */
 .masthead {
-  padding: 12px 24px;
+  padding: 13.5px 24px;
   text-align: center;
 }
 
 .masthead-inner {
   max-width: 1080px;
   margin: 0 auto;
-  border-top: 3px solid var(--text);
   border-bottom: 1px solid var(--text);
   padding: 0;
 }
@@ -532,8 +531,8 @@ body[data-perspective="builder"] .timeline-item[data-persona="builder"] { displa
 
 .hub-link {
   display: block;
-  border: 1.5px solid var(--text);
-  padding: 26.5px 28px;
+  border: 1px solid var(--text);
+  padding: 20px 22px;
   text-decoration: none;
   color: var(--text);
   transition: background 0.2s, border-color 0.2s, transform 0.2s;
@@ -546,25 +545,25 @@ body[data-perspective="builder"] .timeline-item[data-persona="builder"] { displa
 
 .hub-link h2 {
   font-family: var(--display);
-  font-size: 24px;
-  line-height: var(--rhythm);
+  font-size: 22px;
+  line-height: 1.2;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.01em;
-  margin-bottom: 0;
+  margin-bottom: 8px;
 }
 
 .hub-link p {
   font-size: 16px;
   color: var(--text-secondary);
-  line-height: var(--rhythm);
-  margin-bottom: var(--rhythm);
+  line-height: 1.5;
+  margin-bottom: 14px;
 }
 
 .hub-link-arrow {
   font-family: var(--sans);
   font-size: 12.5px;
-  line-height: var(--rhythm);
+  line-height: 1.2;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
