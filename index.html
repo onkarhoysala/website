@@ -91,20 +91,8 @@
 
     <!-- ABOUT -->
     <section id="about" class="reveal">
-      <div class="about-text">
-        <p class="section-intro">I love building software and the teams that put it all together cohesively. I currently head engineering at Flash.co, where we're building AI-powered commerce. The rest of my time goes to books, tennis and sometimes a camera.</p>
-        <p class="section-intro">Based in Bangalore. Here's the rest.</p>
-      </div>
-      <figure class="about-photo">
-        <img id="random-photo" alt="A photograph by Onkar Hoysala">
-        <script>
-          (() => {
-            const n = [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,23,24,25,26,27,28,29,30,33,34];
-            document.getElementById('random-photo').src = 'photos/photo_' + n[Math.floor(Math.random() * n.length)] + '.jpg';
-          })();
-        </script>
-        <noscript><img src="photos/photo_25.jpg" alt="A photograph by Onkar Hoysala"></noscript>
-      </figure>
+      <p class="section-intro">I love building software and the teams that put it all together cohesively. I currently head engineering at Flash.co, where we're building AI-powered commerce. The rest of my time goes to books, tennis and sometimes a camera.</p>
+      <p class="section-intro">Based in Bangalore. Here's the rest.</p>
     </section>
 
     <!-- EXPLORE -->
@@ -116,6 +104,13 @@
           <span class="hub-link-arrow">Read more &rarr;</span>
         </a>
         <a href="beyond-work/" class="hub-link stagger">
+          <img id="random-photo" class="hub-link-photo" alt="A photograph by Onkar Hoysala">
+          <script>
+            (() => {
+              const n = [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,23,24,25,26,27,28,29,30,33,34];
+              document.getElementById('random-photo').src = 'photos/photo_' + n[Math.floor(Math.random() * n.length)] + '.jpg';
+            })();
+          </script>
           <h2>Beyond Work</h2>
           <p>Photography, tennis, travel, and a library built up over two and a half decades.</p>
           <span class="hub-link-arrow">Read more &rarr;</span>

@@ -235,22 +235,6 @@ section.visible { background-size: 100% 1px; }
 }
 
 .section-intro:last-child { margin-bottom: 0; }
-
-#about {
-  display: grid;
-  grid-template-columns: 1fr 280px;
-  gap: 48px;
-  align-items: start;
-}
-
-.about-photo { margin: 6px 0 0; }
-
-.about-photo img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 /* ---- REVEAL & STAGGER ---- */
 .reveal {
   opacity: 0;
@@ -571,7 +555,9 @@ body[data-perspective="builder"] .timeline-item[data-persona="builder"] { displa
 }
 
 .hub-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   border: 1px solid var(--text);
   padding: 20px 22px;
   text-decoration: none;
@@ -582,6 +568,15 @@ body[data-perspective="builder"] .timeline-item[data-persona="builder"] { displa
 .hub-link:hover {
   border-color: var(--accent);
   transform: translateY(-2px);
+}
+
+.hub-link-photo {
+  display: block;
+  width: calc(100% + 44px);
+  margin: -20px -22px 20px;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+  border-bottom: 1px solid var(--text);
 }
 
 .hub-link h2 {
@@ -1182,9 +1177,6 @@ footer p {
   .masthead .byline { font-size: 11px; }
 
   .hub-links { grid-template-columns: 1fr; }
-
-  #about { grid-template-columns: 1fr; gap: var(--rhythm); }
-
   .now-item .now-role { font-size: 12px; }
 
   .timeline-item { grid-template-columns: 1fr; gap: 4px; }
