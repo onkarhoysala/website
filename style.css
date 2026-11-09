@@ -131,7 +131,7 @@ section.visible .section-label::after {
 /* ---- MASTHEAD (index only) ---- */
 .masthead {
   padding: 13.5px 24px;
-  text-align: center;
+  text-align: left;
 }
 
 .masthead-inner {
@@ -235,6 +235,21 @@ section.visible { background-size: 100% 1px; }
 }
 
 .section-intro:last-child { margin-bottom: 0; }
+
+#about {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 48px;
+  align-items: start;
+}
+
+.about-photo { margin: 6px 0 0; }
+
+.about-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
 /* ---- REVEAL & STAGGER ---- */
 .reveal {
@@ -1167,6 +1182,8 @@ footer p {
   .masthead .byline { font-size: 11px; }
 
   .hub-links { grid-template-columns: 1fr; }
+
+  #about { grid-template-columns: 1fr; gap: var(--rhythm); }
 
   .now-item .now-role { font-size: 12px; }
 
