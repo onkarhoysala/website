@@ -508,8 +508,9 @@ body[data-perspective="builder"] .timeline-item[data-persona="builder"] { displa
 .accordion-prose strong {
   font-weight: 700;
   color: var(--text);
-  white-space: nowrap;
 }
+
+.accordion-prose .nb { white-space: nowrap; }
 
 .accordion-list li:last-child { margin-bottom: 0; }
 
