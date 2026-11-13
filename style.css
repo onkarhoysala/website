@@ -203,6 +203,7 @@ section.visible .section-label::after {
 }
 
 .page-header .intro {
+  margin-top: 12px;
   font-size: 18px;
   color: var(--text-secondary);
   line-height: var(--rhythm);
@@ -1182,9 +1183,9 @@ footer p {
   nav .nav-links { gap: 14px; }
   nav .nav-links a { font-size: 11px; }
 
-  .masthead { padding: 28px 20px 20px; }
-  .masthead h1 { font-size: 36px; }
-  .masthead .byline { font-size: 11px; }
+  .masthead { padding: 20px 24px 0; }
+  .masthead h1 { font-size: 40px; line-height: 44px; }
+  .masthead .byline { font-size: 15px; margin-top: 8px; }
 
   .hub-links { grid-template-columns: 1fr; }
   .now-item .now-role { font-size: 12px; }
@@ -1196,10 +1197,8 @@ footer p {
   .now-item-wrap > .accordion-panel { margin-left: 0; }
   .timeline-year { font-size: 12px; }
 
-  section { padding: 48px 0; }
-
-  .page-header { padding: 56px 0 44px; }
-  .page-header h1 { font-size: 36px; }
+  .page-header { padding: var(--rhythm) 0 0; }
+  .page-header h1 { font-size: 36px; line-height: 44px; }
 
   .tennis-layout { grid-template-columns: 1fr; }
 
