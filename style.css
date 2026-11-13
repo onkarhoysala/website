@@ -130,7 +130,7 @@ section.visible .section-label::after {
 
 /* ---- MASTHEAD (index only) ---- */
 .masthead {
-  padding: 13.5px 24px;
+  padding: 54px 24px 0;
   text-align: left;
 }
 
@@ -202,8 +202,10 @@ section.visible .section-label::after {
   animation: slideUp 0.8s cubic-bezier(0.23, 1, 0.32, 1) 0.2s forwards;
 }
 
+.page-header:not(:has(.intro)) { padding-bottom: 0; }
+
 .page-header .intro {
-  margin-top: 12px;
+  margin-top: var(--rhythm);
   font-size: 18px;
   color: var(--text-secondary);
   line-height: var(--rhythm);
@@ -1183,7 +1185,7 @@ footer p {
   nav .nav-links { gap: 14px; }
   nav .nav-links a { font-size: 11px; }
 
-  .masthead { padding: 20px 24px 0; }
+  .masthead { padding: 31px 24px 0; }
   .masthead h1 { font-size: 40px; line-height: 44px; }
   .masthead .byline { font-size: 15px; margin-top: 8px; }
 
