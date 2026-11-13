@@ -81,7 +81,7 @@ nav .nav-links {
 
 nav .nav-links a {
   font-family: var(--sans);
-  font-size: 13px;
+  font-size: 15px;
   line-height: var(--rhythm);
   color: var(--text-secondary);
   text-decoration: none;
@@ -1164,8 +1164,8 @@ footer p {
 
 /* ---- RESPONSIVE ---- */
 @media (max-width: 600px) {
-  nav .nav-links { gap: 14px; }
-  nav .nav-links a { font-size: 11px; }
+  nav .nav-links { gap: 10px; }
+  nav .nav-links a { font-size: 12px; white-space: nowrap; }
 
   .masthead { padding: 31px 24px 0; }
   .masthead h1 { font-size: 40px; line-height: 44px; }
