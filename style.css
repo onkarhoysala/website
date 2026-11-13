@@ -315,15 +315,17 @@ body[data-perspective="builder"] .timeline-item[data-persona="builder"] { displa
 .now-item-wrap:last-child { border-bottom: none; }
 
 .now-item {
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  gap: 24px;
+  align-items: start;
   text-decoration: none;
   color: var(--text);
 }
 
-.now-item .entry-logo {
-  margin-top: 4px;
+.now-item-wrap > .accordion-toggle,
+.now-item-wrap > .accordion-panel {
+  margin-left: 136px;
 }
 
 .now-item:hover h3 { text-decoration: underline; text-underline-offset: 4px; transition: text-decoration-color 0.2s; }
@@ -1187,7 +1189,11 @@ footer p {
   .hub-links { grid-template-columns: 1fr; }
   .now-item .now-role { font-size: 12px; }
 
-  .timeline-item { grid-template-columns: 1fr; gap: 4px; }
+  .timeline-item,
+  #before .timeline-item,
+  .now-item { grid-template-columns: 1fr; gap: 8px; }
+  .now-item-wrap > .accordion-toggle,
+  .now-item-wrap > .accordion-panel { margin-left: 0; }
   .timeline-year { font-size: 12px; }
 
   section { padding: 48px 0; }
