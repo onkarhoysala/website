@@ -509,6 +509,12 @@ body[data-perspective="builder"] .timeline-item[data-persona="builder"] { displa
 
 .accordion-prose p:last-child { margin-bottom: 0; }
 
+.accordion-prose strong {
+  font-weight: 700;
+  color: var(--text);
+  white-space: nowrap;
+}
+
 .accordion-list li:last-child { margin-bottom: 0; }
 
 /* ---- BEYOND WORK TEASER ---- */
