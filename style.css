@@ -83,8 +83,6 @@ nav .nav-links a {
   font-family: var(--sans);
   font-size: 13px;
   line-height: var(--rhythm);
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
   color: var(--text-secondary);
   text-decoration: none;
   font-weight: 700;
