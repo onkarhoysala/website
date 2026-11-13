@@ -2,7 +2,7 @@
 
 > Head of Engineering at Flash.co, building AI-powered commerce. 16 years across consumer tech and SaaS — previously Livspace, VideoKen, and co-founder of Fields of View. Based in Bangalore, India.
 
-Onkar runs engineering end to end at Flash.co, reporting to the CEO, and stays hands-on across infra, agents, and UI. He scaled the product to ~1.3M monthly active users, shipped 2 product pivots (the second in 6 weeks), and built the agent platform that keeps Flash.co's product rankings current — around 7,900 live ranked lists covering 217,000 products across India and the US. He's held the budget flat for 4 years running, favoring talent density over headcount.
+Onkar runs engineering end to end at Flash.co, where he was one of the earliest people on the team, and stays hands-on across infra, agents, and UI. He scaled the product to ~1.3M monthly active users, shipped 2 product pivots (the second in 6 weeks), and built the agent platform that keeps Flash.co's product rankings current — around 7,900 live ranked lists covering 217,000 products across India and the US. He's held the budget flat for 4 years running, favoring talent density over headcount.
 
 Before Flash.co: Director of Engineering at Livspace (owned the pre-fulfilment domain, ~50 engineers), Lead Engineer at VideoKen, and co-founder of Fields of View, a research company building simulation software for public policy that is still running today. He holds an MS by Research in Information Technology from IIIT-Bangalore and a B.E. in Computer Science from Visvesvaraya Technological University.
 
