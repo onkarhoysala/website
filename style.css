@@ -31,8 +31,8 @@ html {
 body {
   font-family: var(--serif);
   background-color: var(--bg);
-  background-image: var(--texture-image, radial-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1.3px));
-  background-size: var(--texture-size, 4px 4px);
+  background-image: radial-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1.3px);
+  background-size: 4px 4px;
   background-attachment: scroll;
   color: var(--text);
   line-height: var(--rhythm);
