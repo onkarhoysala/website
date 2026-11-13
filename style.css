@@ -48,8 +48,6 @@ body {
 
 /* ---- NAV ---- */
 nav {
-  opacity: 0;
-  animation: fadeDown 0.6s cubic-bezier(0.23, 1, 0.32, 1) 0.1s forwards;
   border-bottom: 1px solid var(--text);
 }
 
@@ -198,8 +196,6 @@ section.visible .section-label::after {
 
 .page-header h1 .line-inner {
   display: block;
-  transform: translateY(105%);
-  animation: slideUp 0.8s cubic-bezier(0.23, 1, 0.32, 1) 0.2s forwards;
 }
 
 .page-header:not(:has(.intro)) { padding-bottom: 0; }
@@ -210,9 +206,6 @@ section.visible .section-label::after {
   color: var(--text-secondary);
   line-height: var(--rhythm);
   font-weight: 350;
-  opacity: 0;
-  transform: translateY(16px);
-  animation: fadeUp 0.7s cubic-bezier(0.23, 1, 0.32, 1) 0.45s forwards;
 }
 
 /* ---- SECTIONS ---- */
@@ -1164,15 +1157,6 @@ footer p {
 }
 
 /* ---- KEYFRAMES ---- */
-@keyframes fadeDown {
-  from { opacity: 0; transform: translateY(-12px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes slideUp { to { transform: translateY(0); } }
-
-@keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
-
 @keyframes drawLine { to { background-size: 100% 1px; } }
 
 @keyframes nudge {
@@ -1210,4 +1194,9 @@ footer p {
   .book-card { width: 130px; }
   .book-cover { width: 130px; height: 192px; }
   .shelf-scroll { gap: 20px; }
+}
+
+.no-reveal-anim *,
+.no-reveal-anim *::after {
+  transition: none !important;
 }

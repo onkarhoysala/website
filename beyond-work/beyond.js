@@ -181,4 +181,10 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
-document.querySelectorAll('.reveal, section, footer').forEach(el => observer.observe(el));
+// Whatever is on screen at load shows immediately; only content scrolled into view animates.
+document.documentElement.classList.add('no-reveal-anim');
+document.querySelectorAll('.reveal, section, footer').forEach(el => {
+  if (el.getBoundingClientRect().top < innerHeight) el.classList.add('visible');
+  else observer.observe(el);
+});
+requestAnimationFrame(() => requestAnimationFrame(() => document.documentElement.classList.remove('no-reveal-anim')));
