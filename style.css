@@ -579,6 +579,8 @@ body[data-perspective="builder"] .timeline-item[data-persona="builder"] { displa
   border-bottom: 1px solid var(--text);
 }
 
+.hub-link-shot { object-position: top left; }
+
 .hub-link h2 {
   font-family: var(--display);
   font-size: 22px;

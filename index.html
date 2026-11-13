@@ -99,6 +99,13 @@
     <section id="explore" class="reveal">
       <div class="hub-links">
         <a href="work/" class="hub-link stagger">
+          <img id="random-shot" class="hub-link-photo hub-link-shot" alt="A screenshot of Onkar's editor">
+          <script>
+            (() => {
+              const shots = ['shot_1.png'];
+              document.getElementById('random-shot').src = 'work-shots/' + shots[Math.floor(Math.random() * shots.length)];
+            })();
+          </script>
           <h2>What I Build</h2>
           <p>16 years across consumer tech and SaaS. Currently Head of Engineering at Flash.co, building AI-powered commerce.</p>
           <span class="hub-link-arrow">Read more &rarr;</span>
