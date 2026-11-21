@@ -112,7 +112,7 @@
             <div>
               <h3>Head of Engineering</h3>
               <p class="now-company">Flash AI</p>
-              <p>I stay hands-on across infra, agents, and UI at Flash.co. The second pivot, rebuilding flash.co as a marketplace agents run end to end, took 3 of us 6 weeks, on top of the platform I built that keeps 217K products ranked across 7.9K live lists.</p>
+              <p>I stay hands-on across infra, agents, and UI at Flash.co. The second pivot, rebuilding flash.co as a marketplace agents run end to end, took 3 of us 6 weeks, on top of the product catalog I led, that keeps 217K products ranked across 7.9K live lists.</p>
             </div>
           </a>
           <button class="accordion-toggle" aria-expanded="false">
@@ -122,9 +122,9 @@
           <div class="accordion-panel">
             <div class="accordion-inner accordion-prose">
               <p>I stay hands-on across infra, agents, and UI here. The second pivot, rebuilding flash.co as a marketplace where agents do what a storefront used to, took <strong>3 of us 6 weeks</strong>. I built the WhatsApp agent we're now piloting as a growing channel for bringing people in, and rebuilt our email infrastructure: 50,000 addresses to about 1.5 million, cost per million emails down more than 70%.</p>
-              <p>The part I'm proudest of is the agent platform underneath it all: a pipeline that keeps around <strong>7.9K product lists</strong> ranked and current (nearly 217K products), pulling from 5 research sources, validating with LLMs, running nightly supervisors to catch what slipped. Only about 1 in 4 flagged removals turns out to be right, which tells you the validators are doing real work, not rubber-stamping. Judges correct most builds before they go live, and automated fixes land right the vast majority of the time.</p>
-              <p>Under the hood, I moved the agent stack from an in-house harness to LangGraph and then to Mastra, after trying CrewAI and a few others, and built real durability on top of it: idempotent steps, heartbeat-based ownership, orphan recovery. We've pulled back <strong>over 300 runs</strong> across redeploys that would otherwise just be lost. I re-benchmark the model router every few months and pin tasks to whatever's cheapest and good enough; plenty of this doesn't need an LLM at all.</p>
-              <p>I've also kept the team small on purpose. Budget's been <strong>flat for 4 years</strong>, because I'd rather have a few people who are excellent than many who are fine. Specs over meetings, design before code: idea to working prototype takes a day or 2 now.</p>
+              <p>The part I'm most excited about is the agentic product index: a pipeline that keeps around <strong>7.9K product lists</strong> ranked and current (nearly 217K products), pulling from 5 research sources, validating with various sources, running nightly supervisors to catch what slipped. The whole thing supported by a supervisors and eval harnesses keep this running every day, adding new products and their research.</p>
+              <p>Under the hood, I moved the agent stack from an in-house harness to LangGraph and then to Mastra, after trying CrewAI and a few others, and built real durability on top of it: idempotent steps, heartbeat-based ownership, orphan recovery. The same mastra plugin now powers the resilience v0 for the commerce agent we are piloting.</p>
+              <p>I've also kept the team small on purpose. Budget's been <strong>flat for 4 years</strong>, favouring dense talent over headcount. </p>
             </div>
           </div>
         </div>
@@ -174,9 +174,9 @@
             </button>
             <div class="accordion-panel">
               <div class="accordion-inner accordion-prose">
-                <p>At Livspace I owned the pre-fulfilment domain, leading EMs and Staff Engineers across about half of engineering. The work that stuck with me most was the platform underneath everything else.</p>
-                <p>We held a <strong>99.99% availability SLO</strong> across our microservices, 99.999% for the services that really couldn't go down, and I refactored the core Java services to handle around 600 requests a second at under 200ms, per pod, with no extra scaling, benchmarked properly with k6 rather than taking anyone's word for it.</p>
-                <p>I also cut the consumer webapp's load time <strong>from 15 seconds to 1</strong>, and scaled the demand-generation stack to handle 3 million visitors a month without it falling over. The products riding on top of this (the superapp, Fury, Quotes, Inkpot) are the ones that moved the business numbers, but none of that works without the platform holding up underneath.</p>
+                <p>At Livspace I owned the pre-fulfilment domain, leading EMs and Staff Engineers across about half of engineering. </p>
+                <p>We held a <strong>99.99% availability SLO</strong> across our microservices, 99.999% for the services that really couldn't go down, and I refactored the core Java services to handle around 600 requests a second at under 200ms, per pod, with no extra scaling, benchmarked properly with k6.</p>
+                <p>My team also cut the consumer webapp's load time <strong>from 15 seconds to 1</strong>, and scaled the demand-generation stack to handle 3 million visitors a month without it falling over. The products riding on top of this (the superapp, Fury, Quotes, Inkpot) are the ones that moved the business numbers.</p>
               </div>
             </div>
           </div>
